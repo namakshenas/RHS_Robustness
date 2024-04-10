@@ -80,7 +80,7 @@ model.addConstr(
         )
         for j in s_market
     )
-    <= 0
+    <= 38
 )
 
 for j in s_market:
