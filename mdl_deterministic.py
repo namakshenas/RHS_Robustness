@@ -3,7 +3,7 @@ from gurobipy import Model, GRB
 
 # PARAMETERs (only here should be changed)
 p_fix_cost = [120, 150, 135]
-p_demand = [50, 20, 50, 70, 10]
+p_demand = [50, 20, 40, 70, 10]
 p_transport_cost = [[10, 20, 15, 16, 17],
                     [5, 17, 18, 15, 15],
                     [13, 15, 18, 15, 16]]
