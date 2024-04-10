@@ -26,6 +26,7 @@ p_demand_upper = [p_demand[j] * 1.2 for j in s_market]
 # LOG
 N_ITER = 50
 log_obj = np.zeros(N_ITER)
+p_gamma = np.linspace(0, N_MARKET, N_ITER)
 
 for iteration in range(N_ITER):
     # INSTANTIATE THE MODEL
@@ -87,7 +88,7 @@ for iteration in range(N_ITER):
             )
             for j in s_market
         )
-        <= iteration
+        <= (sum(p_demand[j] for j in s_market) * (N_MARKET - p_gamma[iteration])) / N_MARKET**2
     )
 
     for j in s_market:
@@ -139,11 +140,11 @@ for iteration in range(N_ITER):
 
 # PLOT
 df = pd.DataFrame(
-    {'iteration': list(range(1, N_ITER + 1)),
+    {'gamma': p_gamma,
      'obj_val': log_obj
      }
 )
-fig = px.line(df, x="iteration", y="obj_val")
+fig = px.line(df, x="gamma", y="obj_val")
 
 fig.update_layout(
     title=dict(
