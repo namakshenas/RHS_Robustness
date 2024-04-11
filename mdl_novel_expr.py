@@ -88,7 +88,7 @@ for iteration in range(N_ITER):
             )
             for j in s_market
         )
-        <= (sum(p_demand[j] for j in s_market) * (N_MARKET - p_gamma[iteration])) / N_MARKET**2
+        <= (sum(p_demand[j] for j in s_market) * (N_MARKET - p_gamma[iteration])) / N_MARKET ** 2
     )
 
     for j in s_market:
@@ -147,17 +147,6 @@ df = pd.DataFrame(
 fig = px.line(df, x="gamma", y="obj_val")
 
 fig.update_layout(
-    title=dict(
-        text="NOVEL MDL",
-        font=dict(size=16),
-        automargin=True,
-        yref='container',
-        x=0.05,
-        y=0.95,
-    ),
-    legend={
-        'visible': True
-    },
     legend_title=None,
     margin=dict(
         l=40,
@@ -166,23 +155,23 @@ fig.update_layout(
         t=40
     ),
     yaxis={
-        'title': None,
+        # 'title': None,
         'linecolor': "#D3D3D3",
-        'showgrid': False
+        # 'showgrid': False,
+        'gridcolor': 'LightPink'
     },
     xaxis={
-        'title': None,
+        # 'title': None,
         'linecolor': "#D3D3D3",
-        'showgrid': False
+        # 'showgrid': False,
+        'gridcolor': 'LightPink'
     },
     plot_bgcolor='rgba(0,0,0,0)',
     paper_bgcolor='rgba(0,0,0,0)',
     hoverlabel=dict(
         bgcolor='rgba(0,0,0,.9)',
         font_size=16,
-        font_family="Rockwell"
-    ),
-
+    )
 )
 
 fig.show()
