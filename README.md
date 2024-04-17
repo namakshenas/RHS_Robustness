@@ -1,5 +1,5 @@
 # RHS Robustness
-### A toy example: A facility location allocation problem
+### A toy example: A facility location-allocation problem
 
 To supply a commodity to customers, it will be first stored at  $`\textcolor{blue}{m}`$ 
 potential facilities and then be transported to $`\textcolor{blue}{n}`$ customers. 
@@ -29,7 +29,7 @@ $`\textcolor{blue}{\tilde{d}_j \in [d_j-\hat{d}_j,d_j+\hat{d}_j]}`$.
 \end{equation}
 ```
 
-The robust counterpart based on the new concept is as follows.
+The robust counterpart based on my new concept is as follows.
 
 ```math
 \begin{equation}
@@ -49,13 +49,22 @@ The robust counterpart based on the new concept is as follows.
 where $`\frac{\Gamma \sum_i d_i}{m^2}`$ is translated as
 `mean absolute deviation from the mean (MAD)`. **Note that $`\Gamma`$ can take any real number**.
 
-> Proof. The detail of the proof is not provided here. However as a hint, I forced `Edmundson-Mandasky bound (1956)`
+> Proof. The detail of the proof is not provided here. However, as a hint, I forced `Edmundson-Mandasky bound (1956)`
 and `Bental-Hochman bound (1972)` on the condensed left-hand side.
 
 
 
 ### Figure: Price of Robustness!
+I ran a quick experiment based on the following numerical inputs:
 
+```
+f = [120, 150, 135]
+d = [50, 20, 40, 70, 10]
+c = [[10, 20, 15, 16, 17],
+     [5, 17, 18, 15, 15],
+     [13, 15, 18, 15, 16]]
+d_hat = 0.2 d
+```
 
 ### Refs
 > Ben-Tal, A., & Hochman, E. (1972). More bounds on the expectation of a convex function of a
