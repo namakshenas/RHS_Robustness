@@ -12,11 +12,10 @@ Let $`\textcolor{blue}{y_i \in \{0, 1\}}`$ be the
 facility location variable, and $`\textcolor{blue}{x_{ij} \in \mathbb{R}_+}`$ be the 
 transportation variable.
 
-Suppose that the demand parameter is not deterministic and following a Normal 
-Distribution, e.g. \textcolor{blue}{$N(\mu=200,\sigma=50)$}.
-We build the following Chance-constrained Mathematical Programming,
-
-
+Suppose that demand parameter $`\tilde{d}_j`$ are not deterministic and their 
+respective stochastic 
+states are oscillating within known threshold
+$`\tilde{d}_j \in [d_j-\hat{d}_j,d_j+\hat{d}_j]`$.
 
 
 ```math
@@ -30,3 +29,7 @@ We build the following Chance-constrained Mathematical Programming,
 \end{split}
 \end{equation}
 ```
+
+To introduce the worst-case robust version of model 
+\ref{mod:det} w.r.t. the uncertain parameters, 
+in what follows, we define two fundamental concepts.
