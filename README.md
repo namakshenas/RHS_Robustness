@@ -55,7 +55,7 @@ and `Bental-Hochman bound (1972)` on the condensed left-hand side.
 
 
 ### Figure: Price of Robustness!
-I ran a quick experiment based on the following numerical inputs:
+I ran a quick experiment based on the following numerical inputs and different gamma values:
 
 ```
 f = [120, 150, 135]
@@ -65,6 +65,7 @@ c = [[10, 20, 15, 16, 17],
      [13, 15, 18, 15, 16]]
 d_hat = 0.2 d
 ```
+![](https://github.com/namakshenas/RHS_Robustness/blob/main/fig.png)
 
 ### Refs
 > Ben-Tal, A., & Hochman, E. (1972). More bounds on the expectation of a convex function of a
