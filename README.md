@@ -49,7 +49,7 @@ The robust counterpart based on the new concept is as follows.
 where $`\frac{\Gamma \sum_i d_i}{m^2}`$ is translated as
 `mean absolute deviation from the mean (MAD)`. **Note that $`\Gamma`$ can take any real number**.
 
-> Proof. The detail of the proof is not provided here. However, I forced `Edmundson-Mandasky bound (1956)`
+> Proof. The detail of the proof is not provided here. However as a hint, I forced `Edmundson-Mandasky bound (1956)`
 and `Bental-Hochman bound (1972)` on the condensed left-hand side.
 
 
