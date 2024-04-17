@@ -5,7 +5,7 @@ To supply a commodity to customers, it will be first stored at  $`\textcolor{blu
 potential facilities and then be transported to $`\textcolor{blue}{n}`$ customers. 
 The fixed cost of the building facilities at site $`\textcolor{blue}{i}`$ is 
 $`\textcolor{blue}{f_i}`$ and the unit capacity cost is $`\textcolor{blue}{a_i}`$
-for \textcolor{blue}{$i = 1,\ldots,m$}. The demand is \textcolor{blue}{$d_j$} for
+for $`\textcolor{blue}{i = 1,\ldots,m}`$. The demand is $`\textcolor{blue}{d_j}`$ for
 $`\textcolor{blue}{j = 1, \ldots, n}`$, and the unit transportation cost between
 $`\textcolor{blue}{$i$}`$ and $`\textcolor{blue}{j}`$ is $`\textcolor{blue}{c_{ij}}`$. 
 Let $`\textcolor{blue}{y_i \in \{0, 1\}}`$ be the 
