@@ -20,7 +20,8 @@ We build the following Chance-constrained Mathematical Programming,
 
 
 
-$$\begin{equation}
+```math
+\begin{equation}
 \nonumber
 \begin{split}
 \textbf{minimize} \quad &\sum_i f_iy_i + \sum_i a_iz_i + \sum_i \sum_j c_{ij} x_{ij} \\
@@ -29,4 +30,5 @@ $$\begin{equation}
 &\Pr \left\{\sum_i  x_{ij} \geq \tilde{d}_j \right\} \geq 1-\alpha, \; \forall j, \\
 &y_i \in \{0, 1\}, z_i \geq 0, \; \forall i, \quad x_{ij} \geq 0,\; \forall i,j. 
 \end{split}
-\end{equation}$$
+\end{equation}
+```
