@@ -46,4 +46,8 @@ The robust counterpart based on the new concept is as follows.
 \end{equation}
 ```
 
+where $`\frac{\Gamma \sum_i d_i}{m^2}`$ is translated as
+`mean absolute deviation from the mean (MAD)`. Note that `$\Gamma$` can take any real number.
 
+> Proof. The detail of the proof is no provided here. However, I used `Edmundson-Mandasky (1956)`
+and `Bental-Hochman (1972)`.
