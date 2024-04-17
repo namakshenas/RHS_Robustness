@@ -29,6 +29,21 @@ $`\textcolor{blue}{\tilde{d}_j \in [d_j-\hat{d}_j,d_j+\hat{d}_j]}`$.
 \end{equation}
 ```
 
-To introduce the worst-case robust version of model 
-\ref{mod:det} w.r.t. the uncertain parameters, 
-in what follows, we define two fundamental concepts.
+The robust counterpart based on the new concept is as follows.
+
+```math
+\begin{equation}
+\nonumber
+\begin{split}
+\textbf{min} \quad &\sum_i f_iy_i + \sum_i \sum_j c_{ij} x_{ij} \\
+\text{s.t.} \quad &\sum_j  x_{ij} \leq My_i, \quad \forall i, \\
+&\sum_i  x_{ij} \geq d_j , \quad \forall j, \\
+&\sum_i  (z_i^l + z_i^u) \leq \frac{\Gamma \sum_i d_i}{m^2} , \\
+&d_i - \hat{d}_i - \sum_j  c_{ij} x_{ij} \leq z_i^l , \quad \forall i,\\
+&d_i + \hat{d}_i - \sum_j  c_{ij} x_{ij} \leq z_i^u , \quad \forall i,\\
+&y_i \in \{0, 1\}, \quad x_{ij},z_i^l,z_i^u \geq 0,\quad \forall i,j. 
+\end{split}
+\end{equation}
+```
+
+
