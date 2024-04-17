@@ -11,10 +11,10 @@ Let $`\textcolor{blue}{y_i \in \{0, 1\}}`$ be the
 facility location variable, and $`\textcolor{blue}{x_{ij} \in \mathbb{R}_+}`$ be the 
 transportation variable.
 
-Suppose that demand parameter $`\textcolor{blue}{\tilde{d}_j}`$ are not deterministic and their 
+Suppose that demand parameter $`\textcolor{red}{\tilde{d}_j}`$ are not deterministic and their 
 respective stochastic 
 states are oscillating within known threshold
-$`\textcolor{blue}{\tilde{d}_j \in [d_j-\hat{d}_j,d_j+\hat{d}_j]}`$.
+$`\textcolor{red}{\tilde{d}_j \in [d_j-\hat{d}_j,d_j+\hat{d}_j]}`$.
 
 
 ```math
@@ -23,7 +23,7 @@ $`\textcolor{blue}{\tilde{d}_j \in [d_j-\hat{d}_j,d_j+\hat{d}_j]}`$.
 \begin{split}
 \textbf{min} \quad &\sum_i f_iy_i + \sum_i \sum_j c_{ij} x_{ij} \\
 \text{s.t.} \quad &\sum_j  x_{ij} \leq My_i, \quad \forall i, \\
-&\sum_i  x_{ij} \geq \tilde{d}_j , \quad \forall j, \\
+&\sum_i  x_{ij} \geq \textcolor{red}{\tilde{d}_j} , \quad \forall j, \\
 &y_i \in \{0, 1\}, \quad x_{ij} \geq 0,\quad \forall i,j. 
 \end{split}
 \end{equation}
