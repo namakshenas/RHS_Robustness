@@ -1,4 +1,4 @@
-# RHS_Robustness
+# RHS Robustness
 ### A toy example: A facility location allocation problem
 
 To supply a commodity to customers, it will be first stored at  $`\textcolor{blue}{m}`$ 
