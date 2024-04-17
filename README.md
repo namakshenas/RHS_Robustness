@@ -49,8 +49,17 @@ The robust counterpart based on the new concept is as follows.
 where $`\frac{\Gamma \sum_i d_i}{m^2}`$ is translated as
 `mean absolute deviation from the mean (MAD)`. Note that `$\Gamma$` can take any real number.
 
-> Proof. The detail of the proof is no provided here. However, I forced `Edmundson-Mandasky bound (1956)`
+> Proof. The detail of the proof is not provided here. However, I forced `Edmundson-Mandasky bound (1956)`
 and `Bental-Hochman bound (1972)` on the condensed left-hand side.
+
+
 
 ### Figure: Price of Robustness!
 
+
+### Refs
+> Ben-Tal, A., & Hochman, E. (1972). More bounds on the expectation of a convex function of a random variable. 
+Journal of Applied Probability, 9(4), 803-812.
+
+> Madansky, A. (1959). Bounds on the expectation of a convex function of a multivariate random variable. 
+The Annals of Mathematical Statistics, 30(3), 743-746.
