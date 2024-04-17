@@ -20,15 +20,15 @@ We build the following Chance-constrained Mathematical Programming,
 
 
 
+
 ```math
 \begin{equation}
 \nonumber
 \begin{split}
-\textbf{minimize} \quad &\sum_i f_iy_i + \sum_i a_iz_i + \sum_i \sum_j c_{ij} x_{ij} \\
-\text{subject to} \quad &z_i \leq K_iy_i, \; \forall i,\\
-&\sum_j  x_{ij} \leq z_i, \; \forall i, \\
-&\Pr \left\{\sum_i  x_{ij} \geq \tilde{d}_j \right\} \geq 1-\alpha, \; \forall j, \\
-&y_i \in \{0, 1\}, z_i \geq 0, \; \forall i, \quad x_{ij} \geq 0,\; \forall i,j. 
+\textbf{min} \quad &\sum_i f_iy_i + \sum_i \sum_j c_{ij} x_{ij} \\
+\text{s.t.} \quad &\sum_j  x_{ij} \leq My_i, \quad \forall i, \\
+&\sum_i  x_{ij} \geq \tilde{d}_j , \quad \forall j, \\
+&y_i \in \{0, 1\}, \quad x_{ij} \geq 0,\quad \forall i,j. 
 \end{split}
 \end{equation}
 ```
