@@ -1,5 +1,6 @@
 # RHS_Robustness
-Right-Hand-Side Robustness
+### A toy example: A facility location allocation problem
+
 To supply a commodity to customers, it will be first stored at $$\textcolor{blue}{$m$}$$ 
 potential facilities and then be transported to \textcolor{blue}{$n$} customers. 
 The fixed cost of the building facilities at site \textcolor{blue}{$i$} is 
