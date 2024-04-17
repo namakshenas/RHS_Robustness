@@ -12,10 +12,10 @@ Let $`\textcolor{blue}{y_i \in \{0, 1\}}`$ be the
 facility location variable, and $`\textcolor{blue}{x_{ij} \in \mathbb{R}_+}`$ be the 
 transportation variable.
 
-Suppose that demand parameter $`\tilde{d}_j`$ are not deterministic and their 
+Suppose that demand parameter $`\textcolor{blue}{\tilde{d}_j}`$ are not deterministic and their 
 respective stochastic 
 states are oscillating within known threshold
-$`\tilde{d}_j \in [d_j-\hat{d}_j,d_j+\hat{d}_j]`$.
+$`\textcolor{blue}{\tilde{d}_j \in [d_j-\hat{d}_j,d_j+\hat{d}_j]}`$.
 
 
 ```math
