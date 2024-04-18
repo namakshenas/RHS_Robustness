@@ -13,7 +13,7 @@ transportation variable.
 
 Suppose that demand parameter $`\textcolor{red}{\tilde{d}_j}`$ are not deterministic and their 
 respective stochastic 
-states are oscillating within known threshold
+states oscillate within known threshold
 $`\textcolor{red}{\tilde{d}_j \in [d_j-\hat{d}_j,d_j+\hat{d}_j]}`$.
 
 
