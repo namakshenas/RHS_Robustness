@@ -38,7 +38,7 @@ The robust counterpart based on my new concept is as follows.
 \textbf{min} \quad &\sum_i f_iy_i + \sum_i \sum_j c_{ij} x_{ij} \\
 \text{s.t.} \quad &\sum_j  x_{ij} \leq My_i, \quad \forall i, \\
 &\sum_i  x_{ij} \geq d_j , \quad \forall j, \\
-&\sum_j  (z_j^l + z_j^u) \leq \frac{\Gamma \sum_j d_j}{m^2} , \\
+&\sum_j  (z_j^l + z_j^u) \leq \frac{\Gamma \sum_j d_j}{n^2} , \\
 &d_j - \hat{d}_j - \sum_i  x_{ij} \leq z_j^l , \quad \forall j,\\
 &d_j + \hat{d}_j - \sum_i  x_{ij} \leq z_j^u , \quad \forall j,\\
 &y_i \in \{0, 1\}, \quad x_{ij},z_j^l,z_j^u \geq 0,\quad \forall i,j. 
