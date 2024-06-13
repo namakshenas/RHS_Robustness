@@ -1,11 +1,11 @@
 # RHS Robustness
 ### A toy example: A facility location-allocation problem
 
-To supply a commodity to customers, it will be first stored at  $`\textcolor{blue}{m}`$ 
-potential facilities and then be transported to $`\textcolor{blue}{n}`$ customers. 
+To supply a commodity to customers, it will be first stored at  $`\textcolor{blue}{n}`$ 
+potential facilities and then be transported to $`\textcolor{blue}{m}`$ customers. 
 The fixed cost of the building facilities at site $`\textcolor{blue}{i}`$ is 
 $`\textcolor{blue}{f_i}`$. The demand is $`\textcolor{blue}{d_j}`$ for
-$`\textcolor{blue}{j = 1, \ldots, n}`$, and the unit transportation cost between
+$`\textcolor{blue}{j = 1, \ldots, m}`$, and the unit transportation cost between
 $`\textcolor{blue}{i}`$ and $`\textcolor{blue}{j}`$ is $`\textcolor{blue}{c_{ij}}`$. 
 Let $`\textcolor{blue}{y_i \in \{0, 1\}}`$ be the 
 facility location variable, and $`\textcolor{blue}{x_{ij} \in \mathbb{R}_+}`$ be the 
@@ -38,7 +38,7 @@ The robust counterpart based on my new concept is as follows.
 \textbf{min} \quad &\sum_i f_iy_i + \sum_i \sum_j c_{ij} x_{ij} \\
 \text{s.t.} \quad &\sum_j  x_{ij} \leq My_i, \quad \forall i, \\
 &\sum_i  x_{ij} \geq d_j , \quad \forall j, \\
-&\sum_j  (z_j^l + z_j^u) \leq \frac{\Gamma \sum_j d_j}{n^2} , \\
+&\sum_j  (z_j^l + z_j^u) \leq \frac{\Gamma \sum_j d_j}{m^2} , \\
 &d_j - \hat{d}_j - \sum_i  x_{ij} \leq z_j^l , \quad \forall j,\\
 &d_j + \hat{d}_j - \sum_i  x_{ij} \leq z_j^u , \quad \forall j,\\
 &y_i \in \{0, 1\}, \quad x_{ij},z_j^l,z_j^u \geq 0,\quad \forall i,j. 
@@ -46,7 +46,7 @@ The robust counterpart based on my new concept is as follows.
 \end{equation}
 ```
 
-where $`\frac{\Gamma \sum_j d_j}{n^2}`$ is translated as
+where $`\frac{\Gamma \sum_j d_j}{m^2}`$ is translated as
 `mean absolute deviation from the mean (MAD)`. **Note that $`\Gamma`$ can take any real number**.
 
 > **Proof**. The detail of the proof is not provided here. However, as a hint, I forced `Edmundson-Mandasky bound (1956)`
